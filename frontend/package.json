@@ -1,14 +1,16 @@
 {
-  "name": "spendcat",
+  "name": "spendcat-frontend",
   "private": true,
   "version": "0.0.1",
-  "description": "spendcat",
+  "description": "Frontend for SpendCat",
+  "author": "Ishai Mika <ishai@mika.se>",
   "license": "MIT",
   "files": [
     "dist/"
   ],
   "scripts": {
-    "lint": "eslint --fix -c .eslintrc.js --ext .ts src",
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
+    "lint-fix": "eslint --fix -c .eslintrc.js --ext .ts src",
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
@@ -29,9 +31,7 @@
     "eslint-plugin-prefer-arrow": "^1.2.1",
     "jest": "24.9.0",
     "jest-cli": "24.9.0",
-    "puppeteer": "2.1.1"
-  },
-  "dependencies": {
+    "puppeteer": "2.1.1",
     "tslint": "^6.1.2"
   }
 }
