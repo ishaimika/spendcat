@@ -1,0 +1,2 @@
+# spendcat
+Categorizes your spendings
