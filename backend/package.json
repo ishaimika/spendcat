@@ -1,0 +1,51 @@
+{
+  "name": "spendcat-backend",
+  "version": "0.0.1",
+  "description": "Backend for SpendCat",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
+    "lint-fix": "eslint --fix -c .eslintrc.js --ext .ts src",
+    "test": "jest",
+    "build": "webpack --progress --mode production # Create minified output, runs in Cloudflare",
+    "build-dev": "webpack --progress --mode none # Creates readable output, runs in Cloudflare",
+    "build-all": "npm run lint && npm run test && npm run build",
+    "watch": "webpack --progress --mode none --watch",
+    "serve": "cloudworker -d -r dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishaimika/spendcat"
+  },
+  "keywords": [],
+  "author": "Ishai Mika <ishai@mika.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishaimika/spendcat/issues"
+  },
+  "homepage": "https://github.com/ishaimika/spendcat#readme",
+  "devDependencies": {
+    "@dollarshaveclub/cloudworker": "^0.1.2",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.17",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "@udacity/types-service-worker-mock": "^1.1.0",
+    "cloudflare-worker-mock": "^1.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsdoc": "^24.0.6",
+    "eslint-plugin-prefer-arrow": "^1.2.1",
+    "jest": "^24.9.0",
+    "jest-fetch-mock": "^2.1.2",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "ts-loader": "^6.2.1",
+    "tslint": "^6.1.2",
+    "types-cloudflare-worker": "^1.1.0",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
