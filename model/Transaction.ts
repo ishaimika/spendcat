@@ -5,5 +5,5 @@ export interface Transaction {
     description: string
     city: string
     card: string
-    name: string
+    name?: string
 }
