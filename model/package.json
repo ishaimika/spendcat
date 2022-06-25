@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ishaimika/spendcat#readme",
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "tough-cookie": "^4.0.0"
   },
   "devDependencies": {
